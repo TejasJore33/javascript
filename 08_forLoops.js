@@ -8,7 +8,7 @@ for (let index = 5; index <=50; index=index+5) { // index = 11
 
 console.log("After loop");
 
-/ WAP to reverse the string --> JavaScript --> tpircSavaJ
+// WAP to reverse the string --> JavaScript --> tpircSavaJ
 
 // JavaScript -->
 
