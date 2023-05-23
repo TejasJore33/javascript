@@ -27,7 +27,7 @@ cube();
 function oddPositionedChars(string){
     var result="";
     for (let i = 0; i< string.length; i++) {
-        if(i%2!==0){
+        if(i%2!==0 && i!==" "){
             result +=string[i];
             
         }
