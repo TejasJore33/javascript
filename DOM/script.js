@@ -7,7 +7,7 @@ console.log(elementPersonal.innerHTML);
 const elementNameByClass = document.getElementsByClassName("name");
 console.log(elementNameByClass[0].innerHTML);
 
-const elementH3 = document.querySelectorAll("p")
+const elementH3 = document.querySelectorAll("p");
 console.log(elementH3[0].innerHTML);
 
 
