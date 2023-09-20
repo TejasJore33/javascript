@@ -5,3 +5,4 @@ function gradeCalculation(marks) {
         
     }    
 }
+gradeCalculation(97);
