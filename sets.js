@@ -13,3 +13,11 @@ letters.add(c);
 
 // Display the Size
 console.log(`the size of array is ${letters.size}`);
+
+// List all Elements
+let text = "";
+for (const x of letters) {
+  text += x;
+}
+
+console.log(text);
