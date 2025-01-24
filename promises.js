@@ -12,7 +12,7 @@ function savetoDb(data) {
 savetoDb("Tejas Jore")
 .then(()=>{
     console.log("data1 saved");
-    return savetoDb("Tejas");
+    return savetoDb("Tejas" );
 })
 .then(()=>{
     console.log("Data2 is saved");
