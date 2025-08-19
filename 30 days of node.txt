@@ -1,0 +1,395 @@
+30-Day Node.js Coding Challenge: 10 Questions Per Day
+
+
+Day 1: Node.js Basics & REPL
+What is Node.js? How does it differ from JavaScript running in a browser?
+How do you check the installed Node.js version from your terminal?
+What is the Node.js REPL (Read-Eval-Print Loop)? How do you enter and exit it?
+Write a simple Node.js script that prints "Hello, Node.js!" to the console.
+Explain the purpose of console.log(), console.warn(), and console.error() in Node.js.
+How do you execute a JavaScript file using Node.js from the command line?
+What is the global object in Node.js? How is it similar/different from window in browsers?
+Declare a global variable in Node.js REPL and access it.
+Explain the concept of process.argv. How can you access command-line arguments in a Node.js script?
+Write a script that takes a name as a command-line argument and prints "Hello, [name]!".
+
+
+Day 2: Node.js Modules (CommonJS)
+What is a module in Node.js? Why are they important?
+Explain the CommonJS module system (require and module.exports).
+Create a file math.js that exports two functions: add(a, b) and subtract(a, b).
+In a separate file app.js, import the math.js module and use its add function.
+How do you export a single value (e.g., a constant) from a module?
+How do you import a module where only specific exported functions are needed?
+What happens if you try to require a non-existent file?
+Explain the difference between module.exports = ... and exports.someFunc = ....
+Create a module that exports an object containing multiple properties (e.g., a configuration object).
+Describe the module loading mechanism in Node.js (e.g., how it resolves file paths).
+
+
+Day 3: Core Modules - File System (fs) - Synchronous
+What are Node.js core modules? How do you import them?
+Import the fs (File System) core module.
+Read the content of a text file synchronously using fs.readFileSync().
+Write content to a new text file synchronously using fs.writeFileSync().
+How do you check if a file or directory exists synchronously using fs.existsSync()?
+Create a new directory synchronously using fs.mkdirSync().
+Delete an empty directory synchronously using fs.rmdirSync() (or fs.rmSync with recursive: true for non-empty).
+Delete a file synchronously using fs.unlinkSync().
+List all files and directories in a given path synchronously using fs.readdirSync().
+What are the potential downsides of using synchronous fs methods in Node.js applications?
+
+
+Day 4: Core Modules - File System (fs) - Asynchronous
+Why is it generally preferred to use asynchronous fs methods over synchronous ones?
+Read the content of a text file asynchronously using fs.readFile() with a callback.
+Write content to a new text file asynchronously using fs.writeFile() with a callback.
+Create a new directory asynchronously using fs.mkdir() with a callback.
+Delete an empty directory asynchronously using fs.rmdir() (or fs.rm with recursive: true) with a callback.
+Delete a file asynchronously using fs.unlink() with a callback.
+List all files and directories in a given path asynchronously using fs.readdir() with a callback.
+Convert an fs.readFile() call that uses callbacks to use Promises (e.g., using fs.promises.readFile()).
+Convert an fs.writeFile() call that uses callbacks to use Promises.
+Write an async/await function that reads a file, then writes its content to another file. Handle errors using try...catch.
+
+
+Day 5: Core Modules - Path & OS
+Import the path core module.
+Get the base name (filename) of a path string (e.g., /users/docs/file.txt).
+Get the directory name of a path string.
+Join multiple path segments into a single path using path.join().
+Resolve a sequence of paths or path segments into an absolute path using path.resolve().
+Import the os core module.
+Get the current operating system type using os.type().
+Get the total memory and free memory of the system using os.totalmem() and os.freemem().
+Get information about the current user's home directory using os.homedir().
+How would you determine the appropriate path separator (/ or \) for the current OS using the path module?
+
+
+Day 6: Core Modules - Events
+What is the Event Emitter in Node.js? What problem does it solve?
+How do you import EventEmitter from the events core module?
+Create a new instance of EventEmitter.
+Emit a custom event named greet using emit().
+Register an event listener for the greet event using on().
+Pass data along with an event using emit() and receive it in the listener.
+Explain the difference between on() and once().
+Remove an event listener using removeListener().
+How do you handle errors that occur during an event listener's execution?
+Simulate a simple publisher-subscriber pattern using EventEmitter (e.g., userLoggedIn event).
+
+
+Day 7: Package Manager (npm)
+What is npm? What is its primary role in Node.js development?
+How do you initialize a new Node.js project using npm? What file does it create?
+Explain the purpose of package.json file.
+How do you install a third-party package (e.g., lodash) for your project?
+What is node_modules folder? Why is it usually not committed to version control?
+Explain the difference between dependencies and devDependencies in package.json.
+How do you install a package as a devDependency?
+How do you uninstall a package?
+What is the package-lock.json file? Why is it important?
+How do you run custom scripts defined in package.json (e.g., a "start" script)?
+
+
+Day 8: HTTP Module - Basics
+What is the Node.js http core module used for?
+Create a basic HTTP server that listens on port 3000.
+Log a message to the console when the server starts listening.
+Handle incoming requests in the server's callback function.
+Send a basic "Hello, World!" response back to the client.
+How do you set the HTTP status code of a response? Set it to 200 (OK).
+How do you set response headers? Set the Content-Type header to text/plain.
+Handle different URL paths:
+If the path is /, send "Home Page".
+If the path is /about, send "About Page".
+Otherwise, send "404 Not Found" with status 404.
+How do you gracefully shut down a Node.js server (e.g., using Ctrl+C)?
+Explain the role of req (request) and res (response) objects in the HTTP server callback.
+
+
+Day 9: HTTP Module - Request/Response Details
+Access the request method (e.g., 'GET', 'POST') from the req object.
+Access request headers from the req object.
+Read data from a POST request body (stream) using req.on('data') and req.on('end').
+Parse a JSON request body from a POST request.
+Send a JSON response back to the client.
+What is the purpose of res.end() vs res.write()?
+How do you handle errors during request processing (e.g., invalid JSON)?
+Implement a simple API endpoint that accepts a POST request with JSON data { "message": "hello" } and echoes it back.
+Explain what happens if you try to send a response after res.end() has already been called.
+How would you handle query parameters in a GET request (e.g., /search?query=nodejs) using the url core module?
+
+
+Day 10: Express.js - Introduction
+What is Express.js? Why is it widely used for building web applications in Node.js?
+Install Express.js in your project.
+Create a basic Express app that listens on port 3000.
+Define a GET route for the root URL (/) that sends "Welcome to Express!".
+Define a GET route for /about that sends "About Us Page".
+How do you access request parameters (e.g., req.params) in Express?
+Define a GET route users/:id that extracts the id and sends "User ID: [id]".
+How do you access query parameters (e.g., req.query) in Express?
+Define a GET route /search that expects a q query parameter and sends "Searching for: [q]".
+What is a "middleware" in Express? Briefly explain its concept.
+
+
+Day 11: Express.js - Middleware
+Create a custom middleware function that logs the request method and URL. Apply it globally.
+Create a middleware function that checks if a user is authenticated (e.g., by checking a header) and either allows or denies access.
+Apply the authentication middleware only to a specific route (e.g., /admin).
+Explain the purpose of next() in a middleware function. What happens if you omit it?
+What is Express's built-in express.json() middleware used for? Apply it to your app.
+What is Express's built-in express.urlencoded() middleware used for?
+Implement an error-handling middleware (one that takes 4 arguments: (err, req, res, next)).
+How do you serve static files (HTML, CSS, images) using Express? Serve files from a public directory.
+What is a route-specific middleware? Provide an example.
+Explain the order of middleware execution in Express.
+
+
+Day 12: Express.js - Routing & Controllers
+How do you define multiple routes for the same path with different HTTP methods (e.g., app.route('/items'))?
+Organize your routes using express.Router(). Create a router for users and another for products.
+How do you mount a router onto a specific path (e.g., /api/users)?
+Separate route handlers into "controller" files. For example, usersController.js and productsController.js.
+In your usersController.js, define functions like getAllUsers, getUserById, createUser.
+Import and use these controller functions in your usersRouter.js.
+Implement a POST route to /api/users that uses a createUser controller function to create a new user (simulated).
+Implement a PUT route to /api/users/:id that uses an updateUser controller function.
+Implement a DELETE route to /api/users/:id that uses a deleteUser controller function.
+What is RESTful API design? How does Express help in creating RESTful APIs?
+
+
+Day 13: Templating Engines (EJS)
+What is a templating engine? Why would you use one with Node.js/Express?
+Install EJS (Embedded JavaScript) in your project.
+Configure Express to use EJS as its view engine.
+Create a simple EJS template file (index.ejs) with basic HTML.
+Render the index.ejs template from an Express route.
+Pass data from your Express route to the EJS template and display it.
+How do you loop through an array of data in an EJS template? Display a list of items.
+How do you conditionally render content in an EJS template?
+Create a partial EJS file (e.g., _header.ejs) and include it in your main template.
+When would you choose a templating engine over sending raw JSON for your frontend?
+
+
+Day 14: Environment Variables & Dotenv
+What are environment variables? Why are they important for Node.js applications?
+Install the dotenv package.
+Create a .env file and define a variable (e.g., PORT=5000).
+Load environment variables into your Node.js application using dotenv.
+Access the PORT environment variable in your Express app.
+Explain why .env files should not be committed to version control.
+How would you set environment variables directly in your terminal before running a Node.js app?
+What is the purpose of process.env.NODE_ENV? How is it commonly used?
+Use NODE_ENV to conditionally enable/disable logging or other development-only features.
+Define a default value for an environment variable if it's not set.
+
+
+Day 15: Introduction to Databases - MongoDB & Mongoose (NoSQL)
+What is a NoSQL database? How does it differ from a SQL database?
+What is MongoDB? Briefly explain its document-oriented nature.
+What is Mongoose? Why is it used with Node.js and MongoDB?
+Install Mongoose in your project.
+Connect to a local MongoDB instance (e.g., mongodb://localhost:27017/mydatabase).
+Define a simple Mongoose Schema (e.g., User schema with name and email).
+Create a Mongoose Model from your schema.
+Save a new document to your MongoDB collection using the Mongoose model.
+Find all documents in a collection using the Mongoose model.
+Explain the concept of Object Data Modeling (ODM) in Mongoose.
+
+
+
+Day 16: Mongoose - CRUD Operations
+Find a single document by its ID using findById().
+Find documents based on specific criteria (e.g., find({ age: { $gte: 18 } })).
+Update a single document by its ID using findByIdAndUpdate().
+Update multiple documents using updateMany().
+Delete a single document by its ID using findByIdAndDelete().
+Delete multiple documents using deleteMany().
+Add validation rules to your Mongoose Schema (e.g., required, minlength).
+Implement a POST endpoint in Express to create a new user and save it to MongoDB. Handle Mongoose validation errors.
+Implement a GET endpoint to fetch all users from MongoDB.
+Implement a GET endpoint to fetch a user by ID from MongoDB. Handle cases where the user is not found.
+
+
+Day 17: Mongoose - Advanced Concepts
+Explain populate() in Mongoose. When would you use it?
+Implement simple data relationships using ref in your Mongoose schema (e.g., Post has a creator which refs to User).
+Use populate() to retrieve a post along with its creator's details.
+What are Mongoose middleware (pre/post hooks)?
+Implement a pre hook to hash a user's password before saving it.
+What are virtual properties in Mongoose? Create a virtual fullName for a User schema.
+Explain indexing in MongoDB. How do you define indexes in Mongoose?
+What is lean() in Mongoose queries? When would you use it for performance?
+Implement pagination for fetching users from MongoDB (e.g., skip() and limit()).
+What is a "unique" index in Mongoose? How does it prevent duplicate entries?
+
+
+Day 18: Authentication - Password Hashing
+Why is it crucial to hash passwords before storing them in a database?
+Install the bcryptjs (or bcrypt) library.
+Hash a plain-text password using bcryptjs.hash().
+Compare a plain-text password with a hashed password using bcryptjs.compare().
+Explain the concept of "salting" in password hashing.
+Integrate password hashing into your user registration (signup) route using a pre hook in Mongoose.
+Integrate password comparison into your user login route.
+What is a "salt round"? How does it affect security and performance?
+Why should you avoid using weak hashing algorithms (like MD5, SHA-1) for passwords?
+What's the difference between symmetric and asymmetric encryption (briefly, as context)?
+
+
+Day 19: Authentication - JWT (JSON Web Tokens)
+What is JWT (JSON Web Token)? What are its three parts?
+Install the jsonwebtoken library.
+Generate a JWT using jwt.sign() when a user successfully logs in.
+Store the JWT in an environment variable (e.g., JWT_SECRET).
+Verify a JWT using jwt.verify() when a protected route is accessed.
+Create an Express middleware that extracts the JWT from the Authorization header, verifies it, and attaches the user data to req.user.
+Apply this JWT authentication middleware to a protected route (e.g., /api/profile).
+How do you handle expired or invalid JWTs?
+Explain the concept of "stateless" authentication with JWTs.
+What are the security considerations when using JWTs (e.g., storing on client, token revocation)?
+
+
+Day 20: Error Handling - Advanced
+Review: Implement a centralized error-handling middleware in Express.
+How do you differentiate between operational errors (e.g., invalid input) and programming errors (e.g., ReferenceError)?
+Create a custom error class (e.g., AppError) for operational errors.
+Throw a custom AppError from a route handler (e.g., "User not found").
+Handle different types of errors in your centralized error handler (e.g., send different status codes/messages for different error types).
+How do you catch unhandled rejections from Promises globally in Node.js?
+How do you catch uncaught exceptions globally in Node.js?
+Explain the importance of graceful shutdown in Node.js applications when unhandled errors occur.
+Use a package like express-async-handler or wrap your async route handlers in try...catch to ensure all errors are passed to the error middleware.
+What is Joi or yup? How do these libraries help with input validation? (Briefly, no implementation needed).
+
+
+Day 21: Data Validation
+What is the purpose of data validation in a backend API?
+Install a validation library like Joi or express-validator.
+Define a validation schema for a user signup (e.g., name is required, email is a valid email, password has min length).
+Validate incoming request bodies against your schema in a POST route.
+Return meaningful error messages to the client when validation fails.
+Implement validation for a user update (PUT) request, where fields might be optional.
+Explain the difference between schema validation and business logic validation.
+How would you perform validation for query parameters?
+How would you sanitize user input before storing it in the database or displaying it?
+What are the security implications of not validating user input?
+
+
+Day 22: API Documentation (Swagger/OpenAPI)
+What is API documentation? Why is it important for Node.js APIs?
+What is Swagger/OpenAPI?
+Install swagger-ui-express and swagger-jsdoc.
+Configure swagger-jsdoc to generate OpenAPI specifications from JSDoc comments.
+Add JSDoc comments to one of your existing API routes (e.g., GET /users) to describe its parameters and responses.
+Set up swagger-ui-express to serve the Swagger UI at a specific endpoint (e.g., /api-docs).
+Explain the benefits of machine-readable API documentation.
+How can API documentation facilitate communication between frontend and backend teams?
+What is the difference between OpenAPI Specification and Swagger UI?
+What details should typically be included in API documentation for each endpoint?
+
+
+Day 23: Logging
+Why is logging important in Node.js applications?
+What is the difference between console.log() and dedicated logging libraries?
+Install a logging library like Winston or Pino.
+Configure your logger to log messages to the console.
+Configure your logger to log messages to a file.
+Log different levels of messages (e.g., info, warn, error).
+Include metadata (e.g., request ID, user ID) in your logs.
+How would you implement a simple request logger middleware using your chosen logging library?
+What are the benefits of structured logging?
+What is a "logging transport"? Give an example.
+
+
+Day 24: Background Tasks & Job Queues
+What is a background task in Node.js? Why are they needed?
+What is a job queue? Name some popular job queue libraries/services for Node.js.
+Explain a scenario where a job queue would be beneficial (e.g., sending emails, processing images).
+Install BullMQ (or Kue, Agenda.js).
+Set up a simple job queue and a worker that processes jobs.
+Add a job to the queue from an Express API endpoint.
+Simulate a time-consuming operation within the worker function.
+How do you handle job failures and retries in a job queue?
+Explain the concept of "idempotency" in background tasks.
+How does a job queue decouple long-running processes from the main request/response cycle?
+
+
+Day 25: Websockets (Socket.IO)
+What are WebSockets? How do they differ from traditional HTTP requests?
+When would you choose WebSockets over HTTP for communication?
+Install socket.io (both client and server parts).
+Set up a basic Socket.IO server within your Express application.
+From the server, emit a message to all connected clients.
+From a simple HTML client, connect to the Socket.IO server.
+From the client, listen for an event emitted by the server.
+From the client, emit an event to the server.
+From the server, listen for an event emitted by the client.
+Implement a simple chat application where messages sent by one client are broadcast to all other clients.
+
+
+Day 26: Testing Node.js Applications (Jest/Supertest)
+Why is testing crucial for Node.js applications?
+What are unit tests, integration tests, and end-to-end (E2E) tests?
+Install Jest (for unit testing) and Supertest (for API integration testing).
+Write a simple unit test for a utility function (e.g., math.js from Day 2).
+How do you set up Jest configuration for a Node.js project?
+Write an integration test for one of your Express GET API routes using Supertest.
+Simulate a POST request to your API route using Supertest and assert the response.
+How do you mock dependencies (e.g., database calls) in Jest tests?
+Explain the purpose of beforeEach and afterEach hooks in Jest.
+What is test coverage? How can you generate a test coverage report?
+
+
+Day 27: Containerization (Docker - Basics)
+What is Docker? Why is it useful for Node.js applications?
+Explain the concept of a Docker image and a Docker container.
+Create a simple Dockerfile for your Node.js application.
+Explain the purpose of common Dockerfile instructions: FROM, WORKDIR, COPY, RUN, CMD.
+Build a Docker image from your Dockerfile.
+Run your Node.js application in a Docker container.
+How do you map ports from the container to your host machine?
+How do you mount local volumes into a Docker container for development?
+Explain why you often copy package.json and package-lock.json first, then run npm install before copying the rest of your code in a Dockerfile.
+What are the benefits of containerization for development and deployment?
+
+
+Day 28: Deployment Considerations
+What are some common deployment platforms for Node.js applications (e.g., Heroku, Vercel, AWS EC2, DigitalOcean)?
+Explain the concept of process managers for Node.js (e.g., PM2). Why are they needed in production?
+What is Nginx or Apache? How are they typically used in front of a Node.js application?
+How do you handle environment variables in a production deployment?
+What are scaling strategies for Node.js applications (e.g., horizontal scaling, clustering)?
+Explain Node.js cluster module.
+What is "logging aggregation" in production environments?
+What is application monitoring (e.g., Prometheus, Grafana, New Relic)?
+How do you ensure your production build is optimized (e.g., remove dev dependencies)?
+What are CI/CD pipelines? Briefly explain their purpose in deployment.
+
+
+Day 29: Security Best Practices
+What is Cross-Site Scripting (XSS)? How can you prevent it in Node.js?
+What is Cross-Site Request Forgery (CSRF)? How can you prevent it?
+Explain SQL Injection (or NoSQL Injection for MongoDB). How do ORMs/ODMs help prevent it?
+What is "rate limiting"? How can you implement it in Express?
+What are HTTP Security Headers? How can you set them in Express (e.g., using helmet package)?
+What is the principle of "Least Privilege"? How does it apply to Node.js applications?
+How do you protect sensitive configuration data (e.g., API keys, database credentials)?
+What is dependency vulnerability scanning (e.g., npm audit)?
+Explain the importance of secure cookie handling (e.g., HttpOnly, Secure, SameSite).
+What are "Denial-of-Service" (DoS) attacks? How can you mitigate them?
+
+
+Day 30: Advanced Topics & Project Build
+What is a microservices architecture? How does Node.js fit into it?
+What is GraphQL? How does it differ from REST?
+What is TypeScript? Why would you use it with Node.js?
+Explain WebSockets (revisited) and provide a more complex use case than simple chat.
+What is the purpose of a reverse proxy in front of your Node.js app?
+What is API Gateway?
+What is Serverless computing (e.g., AWS Lambda, Google Cloud Functions)? How does Node.js fit into it?
+Discuss the importance of proper caching strategies in Node.js applications.
+What are some common Node.js anti-patterns you should avoid?
+Final Project Idea: Spend the rest of the day planning (or even starting) a small full-stack project using Node.js (Express), MongoDB (Mongoose), and your chosen frontend framework/library. Outline the main features, API endpoints, and database schema.

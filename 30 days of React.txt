@@ -1,0 +1,391 @@
+30-Day React Coding Challenge: 10 Questions Per Day
+
+
+Day 1: React Fundamentals & Setup
+What is React and why is it popular?
+What is the purpose of ReactDOM.render()?
+How do you set up a new React project using Create React App?
+Explain the concept of JSX. Why do we use it instead of plain JavaScript?
+What is a React Component? Explain Functional Components vs. Class Components (briefly, as we'll focus on functional).
+Create a simple functional component that returns an <h1>Hello React!</h1>.
+How do you embed JavaScript expressions within JSX? Give an example.
+What is the significance of the key prop when rendering lists in React?
+Explain the difference between rendering an HTML element (e.g., <div>) and a React component (e.g., <MyComponent/>).
+What is the index.js file's role in a typical Create React App project?
+
+
+Day 2: Props & Component Reusability
+What are props in React? How are they passed from parent to child components?
+Create a Welcome component that accepts a name prop and displays "Hello, [name]!".
+How do you pass a number or a boolean as a prop? Provide an example.
+What is props.children? Give an example of its usage.
+Implement a Button component that accepts text and onClick props.
+What are defaultProps? When would you use them?
+Explain prop drilling. Why is it considered a potential issue?
+How can you destructure props in a functional component?
+Pass a JavaScript object as a prop to a child component and display its properties.
+Create a Card component that takes title, description, and imageUrl as props and renders them.
+
+
+Day 3: State & useState Hook
+What is state in React? How does it differ from props?
+What is the useState Hook? How do you import and use it?
+Create a Counter component with a state variable count initialized to 0. Display the count.
+Add a button to your Counter component that increments the count when clicked.
+Explain why you should not directly modify state variables (e.g., count++) and how to update them correctly using the setter function.
+How do you update state based on the previous state (e.g., for counters)? Provide an example.
+Create a ToggleMessage component that shows/hides a message when a button is clicked.
+What happens when state changes in a React component?
+Can you have multiple useState calls in a single functional component? Provide an example.
+Create a component that has a state variable for a string. Add an input field and update the state as the user types.
+
+
+Day 4: Conditional Rendering
+What is conditional rendering in React?
+How do you conditionally render a component using an if statement?
+How do you conditionally render using the ternary operator? Give an example.
+How can you conditionally render using the logical && operator? When is this useful?
+Create a LoggedInStatus component that displays "Welcome, User!" if isLoggedIn prop is true, otherwise "Please log in."
+Render a list of items only if the list is not empty.
+What does it mean to return null from a component's render?
+Create a component that shows either a "Loading..." message or actual data based on an isLoading state.
+Implement a component that renders different UI based on a userRole prop (e.g., "admin" vs. "guest").
+Explain how to use multiple if statements for complex conditional rendering.
+
+
+Day 5: List Rendering & Keys
+How do you render a list of items from an array in React?
+What is the purpose of the key prop when rendering lists?
+What happens if you don't provide a unique key?
+Can you use the index as a key? When is it acceptable, and when is it problematic?
+Given an array of objects [{id: 1, name: 'Alice'}, {id: 2, name: 'Bob'}], render each person's name as a list item (<li>).
+Create a TodoList component that takes an array of todos (strings) and renders them as an unordered list.
+Implement a FilterableList component that displays items from an array, but only those that match a search term (use a state variable for the search term).
+How would you render a list of components, each having its own state?
+Explain why map() is commonly used for list rendering instead of for loops.
+Create a component that renders a table from an array of objects, where each object represents a row.
+
+
+Day 6: useEffect Hook - Side Effects
+What is the useEffect Hook used for?
+How do you import and use useEffect?
+Simulate a side effect: Log "Component mounted" when a component first renders using useEffect.
+What is the "dependency array" in useEffect? Explain its purpose.
+How do you run useEffect only once on component mount (like componentDidMount)?
+How do you run useEffect on every render (no dependency array)? When might this be useful?
+How do you run useEffect only when a specific prop or state variable changes? Provide an example.
+What is the cleanup function in useEffect? When is it executed?
+Use useEffect to set up and clear a setInterval timer (e.g., for a clock component).
+Use useEffect to fetch data from an API (simulated with a setTimeout or actual fetch).
+
+
+Day 7: Forms & Controlled Components
+What are controlled components in React? Why are they preferred for forms?
+Create a simple input field and store its value in component state.
+Implement a text area (textarea) as a controlled component.
+Implement a select dropdown (<select>) as a controlled component.
+How do you handle multiple input fields in a single form using one handleChange function?
+Create a simple login form with controlled username and password inputs.
+How do you prevent the default form submission behavior in React?
+Implement form validation: Display an error message if an input field is empty on submission.
+Explain the difference between onChange and onBlur for form elements.
+Create a checkbox as a controlled component and log its checked status.
+
+
+Day 8: React Router - Basics
+What is React Router used for?
+How do you install React Router?
+Set up BrowserRouter in your App.js and wrap your application components.
+How do you define basic routes using Route and Routes (or Switch for older versions)?
+Create two simple components, Home and About. Define routes for them (e.g., / for Home, /about for About).
+How do you create navigation links using the Link component?
+Explain the exact prop for Route components. Why is it important for the home route?
+Implement a basic navigation bar with Link components to Home and About.
+How do you handle a "Not Found" (404) page in React Router?
+Explain the difference between client-side routing and traditional server-side routing.
+
+
+Day 9: React Router - Advanced
+How do you define a route with URL parameters (e.g., /users/:id)?
+How do you access URL parameters within a component using the useParams Hook?
+Create a UserProfile component that displays a user ID taken from the URL parameter.
+What is useNavigate? How do you use it for programmatic navigation?
+Redirect a user after a successful login to a dashboard page using useNavigate.
+How do you pass state with useNavigate?
+What is useLocation? How do you access query parameters using it?
+Define nested routes in React Router.
+Explain the concept of Outlet when using nested routes.
+Implement a simple authentication flow: If a user is not logged in, redirect them to a login page when they try to access a protected route.
+
+
+Day 10: Component Lifecycle (for Functional Components with Hooks)
+Explain the "Mounting" phase of a component's lifecycle using useEffect.
+Explain the "Updating" phase using useEffect with dependencies.
+Explain the "Unmounting" phase using useEffect's cleanup function.
+How do useEffect and useState together cover the functionality of componentDidMount, componentDidUpdate, and componentWillUnmount from class components?
+When does a component re-render?
+What is the purpose of React.memo? How does it help with performance?
+Implement a child component wrapped in React.memo and demonstrate when it re-renders.
+What is useCallback? When is it useful?
+What is useMemo? When is it useful?
+Explain the difference between useCallback and useMemo.
+
+
+Day 11: Context API - Basics
+What is the Context API in React? What problem does it solve?
+What are the three main steps to use Context API (createContext, Provider, Consumer or useContext)?
+How do you create a Context object using React.createContext()?
+How do you provide a value to the Context using the Provider component?
+How do you consume a context value in a functional component using the useContext Hook?
+Create a ThemeContext to provide a theme (e.g., "light" or "dark") throughout your application.
+Implement a component that consumes the ThemeContext and displays text based on the theme.
+What is the primary advantage of using Context API over prop drilling?
+Can Context API replace a full-fledged state management library like Redux for all use cases? Explain.
+What is the default value provided to createContext() used for?
+
+
+Day 12: Context API - Advanced
+How do you update context values from a consuming component? (Hint: pass a setter function or dispatch function).
+Implement a "Theme Switcher" using ThemeContext where a button in a child component can change the theme globally.
+Can you have multiple Contexts in a single React application? Provide an example.
+Explain how Context API works with useReducer to manage more complex global state.
+Create a AuthContext to manage user authentication status (isLoggedIn, login, logout).
+Provide AuthContext to your application and consume it in a Navbar component to show different links based on login status.
+What are the performance considerations when using Context API?
+When would you prefer Context API over prop drilling?
+When would you prefer a dedicated state management library (like Redux) over Context API?
+How would you structure your context files (e.g., separate files for context, provider, and hook)?
+
+
+Day 13: useRef Hook
+What is the useRef Hook used for?
+How do you import and use useRef?
+Use useRef to get a direct reference to a DOM element (e.g., an input field) and focus it on component mount.
+Can useRef store any mutable value, not just DOM references? Give an example.
+How is useRef different from useState regarding re-renders?
+Implement a component with a button that, when clicked, automatically focuses an input field using useRef.
+Use useRef to store a previous value of a state variable.
+Explain why useRef is suitable for keeping track of variables that don't trigger re-renders.
+When would you use useRef instead of a plain JavaScript variable outside the component?
+Create a Stopwatch component that uses useRef to store the interval ID for setInterval and clears it correctly.
+
+
+Day 14: useReducer Hook
+What is the useReducer Hook? What problem does it solve?
+How do you import and use useReducer? What arguments does it take?
+Re-implement the Counter component (from Day 3) using useReducer.
+What is a reducer function? What arguments does it take and what does it return?
+What is the dispatch function returned by useReducer used for?
+How do you handle different actions in a reducer function (e.g., "INCREMENT", "DECREMENT", "RESET")?
+What is the initial state in useReducer? How can you lazy initialize it?
+When would you choose useReducer over useState?
+Implement a more complex state management using useReducer for a todo list (add, remove, toggle complete).
+How does useReducer help with managing related pieces of state logic?
+
+
+Day 15: Custom Hooks
+What is a custom Hook in React? Why are they useful?
+What is the naming convention for custom Hooks?
+Create a custom Hook useWindowSize that returns the current window width and height.
+Create a custom Hook useLocalStorage to abstract away localStorage interactions (set, get, remove).
+How do you share stateful logic between components using custom Hooks?
+Refactor your useWindowSize hook to use useEffect for adding/removing event listeners.
+Can a custom Hook use other built-in React Hooks? Provide an example.
+Create a custom Hook useFetch that handles API calls, including loading and error states.
+Use your useFetch hook in a component to display data from an API.
+What are the benefits of using custom Hooks for code organization and reusability?
+
+
+Day 16: Styling React Components - CSS Modules & Styled Components
+What are the common ways to style React components?
+Explain Inline Styling in React. What are its limitations?
+How do you use regular CSS files in React? What are global styles?
+What are CSS Modules? How do they solve the problem of global CSS conflicts?
+Demonstrate using CSS Modules to style a component.
+What is Styled Components? Why is it popular?
+Install Styled Components and create a simple styled button.
+How do you pass props to styled components to conditionally style them?
+Explain the concept of "CSS-in-JS."
+Compare and contrast CSS Modules and Styled Components. When would you choose one over the other?
+
+
+Day 17: Styling React Components - Tailwind CSS & Sass
+What is Tailwind CSS? How does it differ from traditional CSS frameworks?
+How do you set up Tailwind CSS in a React project?
+Demonstrate using Tailwind CSS utility classes to style a div.
+What are the advantages of using Tailwind CSS for rapid UI development?
+What is Sass (SCSS)? How does it enhance CSS?
+How do you integrate Sass into a Create React App project?
+Demonstrate using Sass variables and nesting in your React component's styles.
+What are Sass mixins and functions?
+Compare Tailwind CSS with Styled Components and CSS Modules.
+When would you prefer using a CSS preprocessor like Sass in a React project?
+
+
+Day 18: Error Boundaries
+What is an Error Boundary in React? What problem does it solve?
+Can functional components be Error Boundaries? If not, why?
+How do you create an Error Boundary using a Class Component? (Which lifecycle methods are involved?)
+Wrap a component with an Error Boundary and demonstrate catching an error from a child component.
+What kind of errors do Error Boundaries catch? What do they not catch?
+Why should Error Boundaries only catch errors in their child component tree?
+How can you display a fallback UI when an error occurs in an Error Boundary?
+Implement an Error Boundary that logs the error to an external logging service.
+Explain the difference between client-side error handling and React Error Boundaries.
+When would you use Error Boundaries compared to try...catch blocks?
+
+
+Day 19: Portals
+What are React Portals? When would you use them?
+How do you create a Portal using ReactDOM.createPortal()?
+Create a basic Modal component using a Portal, rendering it outside the root React DOM tree.
+Explain the benefits of using Portals for modals, tooltips, or notifications.
+Do events propagate through Portals to the regular React tree? Provide an example.
+Set up a dedicated DOM node in index.html for your Portal to render into.
+Implement a click outside listener for your modal component to close it.
+How do Portals interact with Context API?
+What are the advantages of Portals over just using position: fixed in CSS?
+Can you use useState and useEffect within a component rendered via a Portal?
+
+
+Day 20: Performance Optimization - Memoization & Lazy Loading
+What is the primary goal of React performance optimization?
+Revisit React.memo and useCallback and explain how they prevent unnecessary re-renders.
+Revisit useMemo and explain how it memoizes values and prevents expensive recalculations.
+When should you not use React.memo, useCallback, or useMemo? (Overhead considerations)
+What is code splitting in React? Why is it important?
+How do you implement code splitting using React.lazy and Suspense?
+Implement lazy loading for a large component or a route component.
+What is the fallback prop of Suspense used for?
+What are profilers in React DevTools? How do they help identify performance bottlenecks?
+List other common React performance optimization techniques (e.g., virtualization, optimizing state updates).
+
+
+Day 21: Higher-Order Components (HOCs)
+What is a Higher-Order Component (HOC) in React?
+How does an HOC transform a component?
+Create a simple HOC withLogger that logs when a component mounts and unmounts.
+How do you pass props through an HOC to the wrapped component?
+What are the advantages and disadvantages of using HOCs?
+Implement an HOC withAuth that conditionally renders a component based on an authentication status.
+How can HOCs be used for cross-cutting concerns (e.g., authentication, logging, data fetching)?
+Explain the "Don't Mutate the Original Component" rule when creating HOCs.
+Compare HOCs with Custom Hooks. When would you use one over the other?
+Explain how HOCs can lead to "wrapper hell" and how Hooks help mitigate this.
+
+
+Day 22: Render Props Pattern
+What is the Render Props pattern in React?
+How do you pass a "render prop" to a component?
+Implement a MouseTracker component that takes a render prop (a function) and passes the mouse coordinates to it.
+Why is the Render Props pattern useful for sharing reusable logic?
+Compare Render Props with HOCs for code sharing.
+Can you pass multiple render props to a single component?
+Implement a DataFetcher component that fetches data and passes loading, error, and data to a render prop.
+What are the advantages of Render Props regarding flexibility?
+What are the potential drawbacks or complexities of using Render Props?
+How does the Render Props pattern relate to the concept of "inversion of control"?
+
+
+Day 23: State Management Libraries - Introduction (e.g., Redux basics)
+Why do we need external state management libraries in large React applications?
+What is Redux? What are its core principles (Single source of truth, State is read-only, Changes are made with pure functions)?
+Explain the core concepts of Redux: Store, Actions, Reducers.
+What is a Redux Action? How do you define one?
+What is a Redux Reducer? How does it process actions?
+What is the Redux Store? How do you create it?
+How do you dispatch an action to the Redux store?
+How do you subscribe to changes in the Redux store?
+Briefly explain the role of react-redux library (Provider, useSelector, useDispatch).
+Create a basic Redux store for a counter with increment and decrement actions.
+
+
+Day 24: State Management Libraries - React-Redux
+How do you connect your React application to a Redux store using react-redux's Provider?
+What is the useSelector Hook? How do you use it to read state from the Redux store?
+What is the useDispatch Hook? How do you use it to dispatch actions?
+Re-implement the Counter component using react-redux (useSelector, useDispatch).
+Explain the concept of "selectors" in Redux. Why are they useful?
+How do you combine multiple reducers in Redux using combineReducers?
+Implement a Redux store for a simple todo list (add, toggle, delete todos).
+Connect a React component to your todo list Redux store to display and modify todos.
+What is the purpose of Redux DevTools?
+Discuss the advantages and disadvantages of using Redux in a React application.
+
+
+Day 25: Unit Testing with React Testing Library
+What is unit testing in React? Why is it important?
+What is React Testing Library? What is its philosophy (testing "user behavior")?
+How do you install React Testing Library and Jest?
+Write a basic test case for a simple component that renders "Hello, World!".
+How do you query elements by text, role, or testId in React Testing Library?
+How do you simulate user events (e.g., fireEvent.click())?
+Write a test case for a Counter component that increments its count when a button is clicked.
+How do you test component props?
+What is screen.debug()? When is it useful during testing?
+What is asynchronous testing? How do you test components that fetch data or have timers?
+
+
+Day 26: Performance Optimization - Advanced Techniques
+What is the concept of key prop optimization in list rendering?
+How can you optimize state updates to prevent unnecessary re-renders (e.g., batching)?
+What is useImperativeHandle? When would you use it (e.g., exposing methods to parent)?
+Explain the concept of component virtualization/windowing. When is it necessary?
+What are Web Workers and how can they be used in React for performance?
+How can you use the React DevTools Profiler to identify render bottlenecks?
+What is the role of React.StrictMode in development?
+Explain techniques like "debouncing" and "throttling" in the context of event handlers.
+How can you optimize bundle size in a React application?
+What are some common anti-patterns that lead to performance issues in React?
+
+
+Day 27: Server-Side Rendering (SSR) & Static Site Generation (SSG) - Concepts
+What is Server-Side Rendering (SSR) in React?
+What are the main benefits of SSR (e.g., SEO, initial load performance)?
+What are the drawbacks of SSR?
+What is Static Site Generation (SSG)?
+What are the main benefits of SSG (e.g., performance, security)?
+What are the drawbacks of SSG?
+Explain Hydration in the context of SSR/SSG.
+When would you choose SSR over client-side rendering (CSR)?
+When would you choose SSG over SSR?
+Name some popular frameworks that facilitate SSR/SSG with React (e.g., Next.js, Gatsby).
+
+
+Day 28: Next.js Fundamentals (as an SSR/SSG example)
+What is Next.js? How does it extend React?
+How do you create a new Next.js project?
+Explain file-system based routing in Next.js.
+How do you fetch data for SSR in Next.js (e.g., getServerSideProps)?
+How do you fetch data for SSG in Next.js (e.g., getStaticProps)?
+Explain getStaticPaths and its purpose with getStaticProps.
+What is API Routes in Next.js? How can you create a backend API endpoint?
+How does Next.js handle image optimization (next/image)?
+Explain Client-Side Rendering (CSR) within a Next.js application.
+What are _app.js and _document.js files in Next.js?
+
+
+Day 29: Accessibility (A11y) & Best Practices
+What is web accessibility (A11y)? Why is it crucial in React development?
+How do you use semantic HTML elements in React?
+What are ARIA attributes? Give an example of using aria-label.
+How do you handle keyboard navigation and focus management in React components?
+Explain the importance of alternative text for images (alt attribute).
+What are common accessibility pitfalls in React (e.g., dynamic content updates)?
+How can you ensure sufficient color contrast in your React app?
+What are linting tools (e.g., ESLint plugins like eslint-plugin-jsx-a11y) for accessibility?
+How can you test for accessibility issues (e.g., browser extensions, automated tools)?
+Discuss the importance of managing focus when modals or other overlays open/close.
+
+
+Day 30: Project Structure & Advanced Concepts
+Discuss common React project structures (e.g., by feature, by type). What are the pros and cons?
+What is the concept of Atomic Design in React component architecture?
+How can you integrate TypeScript into a React project? What are its benefits?
+What is Storybook? How does it help in component development and documentation?
+Explain PropTypes for type checking props (even with TypeScript).
+What are React Fragments? When are they useful?
+Explain the concept of Portal (revisited) in more detail if needed.
+What is StrictMode in React? How does it help in development?
+Discuss patterns for managing global state without Redux (e.g., Context API with useReducer).
+Reflect on your 30-day journey. What are the key takeaways, and what areas do you want to explore further?

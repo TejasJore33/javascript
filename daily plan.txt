@@ -1,0 +1,127 @@
+| Week | Focus Area                           | Goal                                                        |
+| ---- | ------------------------------------ | ----------------------------------------------------------- |
+| 1    | Core JavaScript + React Fundamentals | Strengthen JS base & revisit React basics                   |
+| 2    | Advanced React + Ecosystem           | Master patterns, hooks, routing, and context                |
+| 3    | System Design + Project Work         | Learn frontend system design & build a mini project         |
+| 4    | Mock Interviews + DSA + Resume       | Practice interviews, polish resume, and work on weak points |
+
+
+🔹 Week 1: Core JavaScript + React Basics
+
+| Day | Topics                                                         |
+| --- | -------------------------------------------------------------- |
+| 1   | JavaScript: Closures, Hoisting, Scope, `this`, ES6+ features   |
+| 2   | JS: Promises, async/await, event loop, callbacks               |
+| 3   | DOM, Event Delegation, debounce/throttle, Web APIs             |
+| 4   | React Basics: JSX, Components, Props, State                    |
+| 5   | Functional Components vs Class, Lifecycle methods              |
+| 6   | State Lifting, Event Handling, Conditional Rendering           |
+| 7   | Build a small React app (e.g., Todo App) to reinforce learning |
+
+
+Week 2: Advanced React + Ecosystem
+
+| Day | Topics                                                               |
+| --- | -------------------------------------------------------------------- |
+| 8   | Hooks: useState, useEffect (in depth)                                |
+| 9   | Hooks: useRef, useMemo, useCallback, custom hooks                    |
+| 10  | React Router v6+, nested routes, lazy loading                        |
+| 11  | State Management: Context API                                        |
+| 12  | Redux (basics) or Zustand/Recoil (if you prefer modern alternatives) |
+| 13  | Error boundaries, Suspense, Error handling                           |
+| 14  | Build feature: e.g., Weather App or Expense Tracker                  |
+
+
+Week 3: Frontend System Design + Mini Project
+
+| Day   | Topics                                                         |
+| ----- | -------------------------------------------------------------- |
+| 15    | Component design patterns, container/presentational components |
+| 16    | Project folder structures, scalable architecture               |
+| 17    | Code splitting, lazy loading, performance optimization         |
+| 18    | Accessibility (a11y), SEO basics for SPAs                      |
+| 19    | Testing: React Testing Library, unit vs integration testing    |
+| 20–21 | **Start a mini-project** (deploy it online - Netlify/Vercel)   |
+
+
+Week 4: DSA + Mock Interviews + Resume
+
+| Day | Topics                                                 |
+| --- | ------------------------------------------------------ |
+| 22  | Arrays, Strings - 5 problems (LeetCode/Easy-Medium)    |
+| 23  | Recursion, Sorting, Searching                          |
+| 24  | Linked List, Stack, Queue                              |
+| 25  | Basic Tree/Graph (optional based on target company)    |
+| 26  | Mock Interview 1 (use Pramp, Interviewing.io, or peer) |
+| 27  | Review project and resume feedback                     |
+| 28  | Behavioral questions + STAR method                     |
+| 29  | Mock Interview 2 + Fix weak areas                      |
+| 30  | Final revision + Take it easy                          |
+
+
+✅ Daily Interview Prep Questions (React Developer)
+🔹 Week 1: JavaScript + React Basics
+Day	Topic	Questions
+1	JS Basics	What is the difference between var, let, and const?
+Explain hoisting.
+2	Scope & Closures	What is a closure? Give a real-world example.
+Explain lexical scope.
+3	Promises & async	What is the event loop?
+Explain the difference between Promise, async/await.
+4	React Basics	What is JSX?
+How is React different from vanilla JS?
+5	Components	Functional vs Class components?
+How does React update the DOM?
+6	State & Props	How does state lifting work?
+What’s the difference between state and props?
+7	Build Day	Build a basic app (e.g., To-do) and explain your folder structure and component flow.
+🔹 Week 2: Advanced React + Hooks
+Day	Topic	Questions
+8	useEffect	How does useEffect work?
+Explain cleanup functions.
+9	Custom Hooks	When should you write a custom hook?
+How do you reuse logic in React?
+10	useMemo/useCallback	What’s the purpose of useMemo and useCallback? Give examples.
+11	Routing	How does React Router work?
+What are dynamic and nested routes?
+12	Context API	When would you use Context API over props?
+Pros and cons of context.
+13	State Management	Redux vs Context vs Zustand?
+What is Redux Toolkit?
+14	Debugging	How would you debug a performance issue in a React app?
+🔹 Week 3: System Design + Mini Project
+Day	Topic	Questions
+15	Component Design	What is a smart vs dumb component?
+What are compound components?
+16	Architecture	How would you structure a large-scale React app?
+What is separation of concerns?
+17	Code Splitting	How does code-splitting work in React?
+What is lazy loading?
+18	Accessibility	What is ARIA?
+How would you make a button accessible?
+19	Testing	How would you test a React form?
+What is the difference between unit and integration tests?
+20	Deployment	How would you deploy a React app?
+What is CI/CD in frontend dev?
+21	Demo Day	Demo your project. Can you explain how you built it and what you'd improve?
+🔹 Week 4: DSA + Behavioral + Mock Interview
+Day	Topic	Questions
+22	Arrays/Strings	Reverse a string
+Two Sum problem
+Find longest word in a sentence
+23	Recursion	Fibonacci recursively
+Flatten a nested array
+24	Linked Lists	Implement a singly linked list (basic)
+Detect a loop in a list
+25	Sorting/Search	Write binary search
+Quick sort
+26	Mock Qs	What’s the most challenging bug you’ve fixed?
+Tell me about a time you refactored.
+27	Resume Qs	Walk me through your resume.
+Which project are you proud of and why?
+28	System Design	How would you design a component library?
+Build a notification/toast system
+29	Mock Qs 2	Live coding: Build a counter with increment/decrement
+Explain React reconciliation
+30	Review	What did you learn in 30 days?
+What’s your 30-second elevator pitch?

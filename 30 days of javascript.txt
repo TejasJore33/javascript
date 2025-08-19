@@ -1,0 +1,411 @@
+It's a fantastic goal to dedicate 30 days to JavaScript with daily questions! This will solidify your understanding and help you practice consistently.
+
+Below is a 30-day plan, with 10 questions for each day, covering a wide range of JavaScript topics from basics to more advanced concepts. I've tried to structure it progressively, but feel free to jump around if a topic sparks your interest.
+
+How to Use This Plan:
+
+Solve Actively: Don't just read the answers. Try to solve each question yourself, writing code and testing it.
+Understand Concepts: Focus on understanding why a certain solution works, not just that it works.
+Use Your Dev Tools: The browser's console (console.log()) is your best friend for testing small snippets. Node.js is great for backend-style practice.
+Don't Get Stuck: If you're truly stuck on a question for more than 15-30 minutes, look up hints or even solutions, but then make sure you understand them thoroughly before moving on.
+Review: Periodically review questions from previous days.
+Expand: If a question sparks your interest, delve deeper into that topic.
+30-Day JavaScript Coding Challenge: 10 Questions Per Day
+
+
+Day 1: Basic Syntax & Variables
+Declare a variable firstName and assign your name to it. Log it to the console.
+Declare a variable age and assign your age. Declare a isStudent boolean variable.
+What are the three ways to declare a variable in JavaScript? Provide an example for each.
+Explain the difference between var, let, and const.
+Declare a constant PI and assign its value. Try to reassign it and observe the error.
+Create two variables, num1 = 10 and num2 = 5. Perform addition, subtraction, multiplication, and division. Log each result.
+What is operator precedence? Give an example.
+Declare a string variable greeting = "Hello" and a name variable person = "Alice". Concatenate them to form "Hello Alice".
+What is string interpolation (template literals)? How do you use it?
+Declare a variable x = 7. Increment it by 1 using ++ and decrement it by 1 using --. Log the value after each operation.
+
+
+Day 2: Data Types & Type Coercion
+List the 7 primitive data types in JavaScript.
+What is typeof operator used for? Give an example for string, number, and boolean.
+What is null? What is undefined? How are they different?
+Predict the output of console.log(typeof null); and explain why.
+What is type coercion? Give an example of implicit coercion (e.g., 5 + '5').
+Convert the string "123" to a number using at least two different methods.
+Convert the number 456 to a string.
+What is the difference between == and ===? Give an example where they produce different results.
+Predict the output: console.log(true + false); and console.log(10 / '2');
+How would you explicitly convert a string containing non-numeric characters (e.g., "10a") to a number? What will be the result?
+
+
+Day 3: Conditional Statements (if/else, switch)
+Write an if statement that checks if a variable temperature is greater than 25. If so, log "It's hot!".
+Extend the previous if statement with an else block to log "It's not hot." if the condition is false.
+Write an if-else if-else structure:
+If score is 90 or above, log "Excellent".
+If score is between 70 and 89, log "Good".
+Otherwise, log "Needs improvement".
+Explain what a "falsy" value is in JavaScript. List at least 5 falsy values.
+Use a ternary operator to assign "Adult" to status if age is 18 or more, otherwise "Minor".
+Create a switch statement that checks a day variable (e.g., "Monday", "Tuesday") and logs a corresponding message.
+Add a default case to your switch statement for invalid days.
+What is the purpose of break in a switch statement? What happens if you omit it?
+Write an if statement to check if a number is both positive AND even.
+Write an if statement to check if a string is either empty OR contains the character 'X'.
+
+
+Day 4: Loops (for, while, do-while)
+Write a for loop that logs numbers from 1 to 5.
+Write a for loop that logs even numbers from 2 to 10.
+Write a while loop that counts down from 5 to 1.
+Explain the difference between a while loop and a do-while loop. Provide an example where do-while might be more suitable.
+Use a for loop to iterate over a string "JavaScript" and log each character.
+Write a for loop that calculates the sum of numbers from 1 to 10.
+Use break to exit a for loop early when a specific condition is met (e.g., stop when i reaches 3).
+Use continue to skip an iteration in a for loop (e.g., skip logging i when i is 3).
+What is an infinite loop? Give an example and explain how to avoid it.
+Write a nested for loop to create a simple multiplication table (e.g., 1x1 to 3x3).
+
+
+Day 5: Functions - Basics
+Define a simple function greet() that logs "Hello, World!". Call the function.
+Define a function add(a, b) that takes two parameters and returns their sum. Call it with example numbers.
+What are function parameters and arguments?
+Explain function hoisting in JavaScript.
+Define a function isEven(number) that returns true if the number is even, otherwise false.
+What is a return statement used for in a function? What happens if a function doesn't have a return statement?
+Write a function calculateArea(length, width) that returns the area of a rectangle.
+Define a function expression sayGoodbye that logs "Goodbye!".
+What is the difference between a function declaration and a function expression?
+Create an arrow function multiply(x, y) that returns the product of x and y.
+
+
+Day 6: Functions - Advanced & Scope
+Explain global scope vs. local scope with an example.
+What is block scope? How does let and const relate to it?
+What is a closure? Provide a simple example.
+Write a function createCounter() that returns another function. The inner function should increment and return a count starting from 0.
+What are default parameters in functions? Give an example.
+How can you pass a variable number of arguments to a function? (Hint: arguments object or rest parameters).
+Explain the this keyword in JavaScript in the context of a regular function call.
+What is the difference in this binding between a regular function and an arrow function?
+Implement a callback function: Create a function performOperation(x, y, callback) that performs an operation and then calls the callback with the result.
+What is recursion? Write a recursive function to calculate the factorial of a number.
+
+
+Day 7: Arrays - Basics
+Declare an array fruits with at least three fruit names.
+Access and log the first element of the fruits array.
+Change the second element of the fruits array to "Grape".
+Get the length of the fruits array.
+Add a new fruit "Mango" to the end of the fruits array.
+Remove the last fruit from the fruits array.
+Add a new fruit "Orange" to the beginning of the fruits array.
+Remove the first fruit from the fruits array.
+Use a for loop to iterate over the fruits array and log each fruit.
+Check if an array contains a specific element (e.g., "Banana") using includes() or indexOf().
+
+
+Day 8: Arrays - Methods
+Use forEach() to log each element and its index in an array numbers = [10, 20, 30].
+Use map() to create a new array where each number in [1, 2, 3] is doubled.
+Use filter() to create a new array containing only even numbers from [1, 2, 3, 4, 5, 6].
+Use reduce() to calculate the sum of all elements in [1, 2, 3, 4].
+What is the purpose of the sort() method? Sort an array of numbers [5, 2, 8, 1] in ascending order.
+Sort an array of strings ["banana", "apple", "cherry"] alphabetically.
+Explain the difference between slice() and splice().
+Use slice() to extract a portion of an array (e.g., from index 1 to 3).
+Use splice() to remove elements from an array and/or add new elements.
+Concatenate two arrays [1, 2] and [3, 4] into a single array.
+
+
+Day 9: Objects - Basics
+Create an object person with properties name, age, and city.
+Access and log the name property of the person object using dot notation.
+Access and log the city property using bracket notation.
+Add a new property email to the person object.
+Change the age of the person object to 31.
+Delete the city property from the person object.
+Iterate over the properties of the person object using a for...in loop and log each property name and its value.
+What is the difference between an object and an array?
+Explain the concept of "key-value pairs" in objects.
+Create an object car with properties make, model, and a method startEngine() that logs "Engine started!". Call the method.
+
+
+Day 10: Objects - Advanced & JSON
+What is this in the context of an object method?
+What is JSON.stringify() used for? Convert an object to a JSON string.
+What is JSON.parse() used for? Convert a JSON string back to a JavaScript object.
+Explain object destructuring with an example (extract name and age from a person object).
+Explain array destructuring with an example (extract first and second elements from an array).
+What is the spread operator (...) in objects? Give an example to merge two objects.
+What is the spread operator (...) in arrays? Give an example to combine two arrays.
+How do you deep copy an object in JavaScript? (Briefly explain a common method like JSON.parse(JSON.stringify(obj)) and its limitations).
+What are optional chaining (?.) and nullish coalescing (??) operators? When would you use them?
+Create an array of objects, where each object represents a book (title, author, year). Use map() to get only the titles.
+
+
+Day 11: DOM Manipulation - Basics
+How do you select an HTML element by its ID using JavaScript? Provide an example.
+How do you select all HTML elements by their class name?
+How do you select the first HTML element by its tag name?
+Change the text content of an HTML element with the ID myHeading to "Hello from JavaScript!".
+Change the HTML content (inner HTML) of an element with ID myDiv to <p>New Paragraph</p>.
+Add a CSS class highlight to an element with ID myElement.
+Remove a CSS class hidden from an element.
+Set a custom data attribute data-id="123" on an element.
+Get the value of an input field with the ID usernameInput.
+Create a new div element and append it to the body of the HTML document.
+
+
+Day 12: DOM Manipulation - Events
+Add a click event listener to a button with the ID myButton that logs "Button clicked!".
+Add a mouseover event listener to an image that changes its src attribute.
+Add a submit event listener to a form with the ID myForm that prevents its default submission.
+What is event bubbling? How does event.stopPropagation() work?
+What is event delegation? Provide a simple example.
+Explain the difference between addEventListener() and directly setting onclick property.
+Add a keydown event listener to an input field that logs the pressed key.
+Remove an event listener from an element. Why is it important to use a named function for this?
+Explain event.target vs this in an event handler function.
+Create a simple "toggle" button that changes text between "ON" and "OFF" on each click.
+
+
+Day 13: Asynchronous JavaScript - Callbacks
+What is asynchronous programming in JavaScript? Why is it needed?
+Explain the "Event Loop" concept briefly.
+What is a callback function in the context of asynchronous operations?
+Simulate an asynchronous operation using setTimeout() that logs a message after 2 seconds.
+Create a function getData(callback) that simulates fetching data asynchronously (e.g., with setTimeout) and passes the data to a callback.
+Describe "Callback Hell" or "Pyramid of Doom".
+Write a function doStep1(callback) that performs a step, then calls the callback. Chain two such steps using callbacks.
+What is the purpose of setTimeout(function, 0)?
+Explain the difference between synchronous and asynchronous code execution.
+In JavaScript, are all asynchronous operations handled by the Event Loop? Explain.
+
+
+Day 14: Asynchronous JavaScript - Promises
+What is a Promise in JavaScript? What problem does it solve compared to callbacks?
+What are the three states of a Promise?
+Create a Promise that resolves after 2 seconds with "Success!" and rejects after 3 seconds with "Error!".
+How do you handle a resolved Promise? (Hint: .then()).
+How do you handle a rejected Promise? (Hint: .catch()).
+What is Promise.all() used for? Give a simple example.
+What is Promise.race() used for? Give a simple example.
+Explain Promise.finally().
+Convert a callback-based function (from Day 13, Q5) to return a Promise.
+Chain multiple .then() calls to perform sequential asynchronous operations.
+
+
+Day 15: Asynchronous JavaScript - Async/Await
+What is async/await? What problem does it solve regarding Promises?
+How do you declare an async function?
+What does an async function implicitly return?
+How do you "await" a Promise inside an async function?
+Convert a Promise-based chain (from Day 14, Q10) into an async/await structure.
+How do you handle errors with async/await? (Hint: try...catch).
+Write an async function that fetches data from a fake API (simulate with setTimeout and a Promise) and logs it. Include error handling.
+Can you use await outside an async function? Explain.
+What is the difference between Promise.all() and await for multiple Promises?
+Write an async function that calls two other async functions concurrently and waits for both to complete before logging a final message.
+
+
+Day 16: ES6+ Features - Part 1
+What are Template Literals? (Reviewed, but re-emphasize advantages).
+Explain Arrow Functions and their benefits. (Reviewed, but re-emphasize this binding).
+What is Object Destructuring? Give an example.
+What is Array Destructuring? Give an example.
+Explain the Spread Operator (...) for arrays. Provide an example for copying and merging.
+Explain the Spread Operator (...) for objects. Provide an example for copying and merging.
+What are Rest Parameters (...)? How are they different from the spread operator?
+What are Default Parameters? Give an example.
+What are Computed Property Names in objects? Give an example.
+What is Enhanced Object Literals (shorthand property names, shorthand method names)?
+
+
+Day 17: ES6+ Features - Part 2
+What are Classes in JavaScript? How do they relate to constructor functions?
+Create a simple class Person with a constructor and a method sayHello().
+Explain extends keyword for class inheritance.
+Create a Student class that extends Person and adds a studentId property. Override sayHello() to include student ID.
+What is super() keyword used for in classes?
+What are static methods in classes? Give an example.
+What are get and set accessors in classes? Provide an example.
+What is a Set data structure? How is it different from an array? Add elements, check size, check for existence.
+What is a Map data structure? How is it different from an object? Add key-value pairs, get values, iterate.
+Explain for...of loop. How is it different from for...in? Use it to iterate over an array and a Set.
+
+
+Day 18: Error Handling
+What is error handling in JavaScript? Why is it important?
+How do you use try...catch block to handle errors?
+Simulate a ReferenceError (e.g., trying to access an undeclared variable) and catch it.
+Simulate a TypeError (e.g., calling a method on null) and catch it.
+What is the finally block in try...catch...finally? When does it execute?
+How do you throw a custom error in JavaScript?
+Create a function that throws an error if its input is not a number.
+What is the Error object in JavaScript? What properties does it have?
+Explain the difference between a runtime error and a syntax error.
+What is console.error() used for? When would you use it instead of console.log()?
+
+
+Day 19: Modules
+What are JavaScript Modules (ES Modules)? Why were they introduced?
+How do you export a named export from a module?
+How do you import a named export into another file?
+How do you export a default export from a module?
+How do you import a default export?
+Can a module have both named and default exports? If so, how do you import them together?
+What is the difference between named and default exports? When would you use each?
+Explain import * as name from 'module' syntax.
+What is dynamic import()? When would you use it?
+Briefly explain CommonJS modules (require/module.exports) and how they differ from ES Modules.
+
+
+Day 20: Higher-Order Functions
+What is a higher-order function? Give an example.
+Write a higher-order function repeat(func, times) that takes a function and a number, and calls the function that many times.
+Implement a map function (similar to Array.prototype.map) that takes an array and a callback, returning a new array with the transformed elements.
+Implement a filter function (similar to Array.prototype.filter) that takes an array and a predicate function, returning a new array with only elements that satisfy the predicate.
+Implement a reduce function (similar to Array.prototype.reduce) that takes an array, a reducer function, and an initial value, returning a single accumulated value.
+What is functional programming? How do higher-order functions contribute to it?
+Explain currying with a simple example.
+Explain partial application with a simple example.
+What is function composition? Give a simple example.
+Use a higher-order function (like map or filter) with an array of objects to perform a more complex transformation.
+
+
+Day 21: Regular Expressions (Regex)
+What are Regular Expressions used for in JavaScript?
+How do you define a regular expression literal?
+How do you use the test() method of a RegExp object? Check if "hello" contains "ell".
+How do you use the match() method of a string? Extract numbers from "abc123def456".
+Explain the meaning of . and * in regex.
+Explain + and ? in regex.
+How do you match specific characters using character classes (e.g., [aeiou])?
+How do you match digits (\d), non-digits (\D), whitespace (\s), and non-whitespace (\S)?
+Explain anchors ^ and $ in regex.
+Use replace() with a regex to replace all occurrences of a word (e.g., "cat" with "dog") in a string.
+
+
+Day 22: Working with Dates
+How do you create a new Date object representing the current date and time?
+Get the current year, month (0-indexed), and day of the month.
+Get the current hour, minute, and second.
+Create a Date object for a specific date (e.g., January 1, 2025).
+Format a Date object into a human-readable string (e.g., "MM/DD/YYYY").
+Add 5 days to the current date.
+Calculate the difference in days between two Date objects.
+What is Date.parse()? How does it work?
+Explain UTC vs. local time in JavaScript Date objects.
+Use toLocaleString() to format a date based on user's locale.
+
+
+Day 23: Browser Storage (localStorage, sessionStorage)
+What is localStorage? What are its characteristics?
+How do you store a key-value pair in localStorage? Store your name.
+How do you retrieve a value from localStorage? Retrieve your name.
+How do you remove an item from localStorage?
+How do you clear all items from localStorage?
+What is sessionStorage? How is it different from localStorage?
+Store an object (e.g., { theme: 'dark', userId: 123 }) in localStorage. Remember to stringify it.
+Retrieve and parse the object stored in localStorage.
+When would you choose localStorage over sessionStorage and vice-versa?
+Explain the security considerations when using localStorage (e.g., sensitive data).
+
+
+Day 24: Networking & Fetch API
+What is the Fetch API used for?
+Write a basic fetch request to https://jsonplaceholder.typicode.com/posts/1 and log the JSON response.
+How do you handle a successful fetch response using .then()?
+How do you handle network errors or server errors with fetch? (Hint: catch for network, response.ok for server errors).
+Perform a POST request using fetch to https://jsonplaceholder.typicode.com/posts to create a new post.
+How do you send JSON data in a POST request body?
+Explain async/await with fetch for getting data.
+Explain async/await with fetch for posting data.
+What are HTTP headers? How do you set them in a fetch request?
+What is CORS (Cross-Origin Resource Sharing)? Briefly explain why it's important for fetch requests.
+
+
+Day 25: Advanced Array & Object Concepts
+What are WeakSet and WeakMap? How are they different from Set and Map?
+Explain immutability in JavaScript and why it's often preferred.
+How can you create an immutable copy of an array?
+How can you create an immutable copy of an object?
+What are Proxies in JavaScript? Give a simple use case (e.g., logging property access).
+What are Generators in JavaScript? How do you define them and use yield?
+Create a simple generator function that yields numbers from 1 to 3.
+Explain the concept of iterators and iterables.
+What is Object.freeze()? How does it affect an object?
+What is Object.seal()? How does it affect an object?
+
+
+Day 26: Event Loop & Concurrency Model (Deeper Dive)
+Revisit the Event Loop: Explain Call Stack, Web APIs, Callback Queue (or Message Queue), and Event Loop.
+What is the difference between setTimeout(fn, 0) and Promise.resolve().then(fn) in terms of execution order?
+Explain Microtasks vs. Macrotasks. Give examples of each.
+Predict the output:
+    console.log('start');
+setTimeout(() => console.log('setTimeout'), 0);
+Promise.resolve().then(() => console.log('Promise'));
+console.log('end');
+```
+5.  What is requestAnimationFrame? When would you use it?
+6.  How does queueMicrotask() work?
+7.  What is blocking vs. non-blocking code?
+8.  Explain Web Workers. When would you use them?
+9.  How can you communicate between the main thread and a Web Worker?
+10. What is the impact of a long-running synchronous task on the UI in a browser?
+
+
+Day 27: Error Handling & Debugging (Advanced)
+What is the purpose of debugger; statement in JavaScript?
+How do you use browser developer tools to debug JavaScript code (breakpoints, stepping)?
+Explain stack traces and how they help in debugging.
+What is console.trace()? When is it useful?
+How do you handle Uncaught (in promise) errors?
+Implement a global error handler for uncaught exceptions in the browser.
+Implement a global error handler for unhandled promise rejections.
+What is linting? How does it help prevent errors?
+What are unit tests? Briefly explain their importance.
+How can you use console.time() and console.timeEnd() to measure performance?
+
+
+Day 28: Object-Oriented Programming (OOP) in JS
+Review: Explain Encapsulation, Inheritance, and Polymorphism in OOP context.
+How is polymorphism achieved in JavaScript classes?
+What are private class fields (using # prefix)? Give an example.
+What are public class fields?
+Implement a more complex class hierarchy (e.g., Shape -> Circle / Rectangle).
+Add a toString() method to your Shape class and override it in subclasses.
+How does JavaScript's prototypal inheritance differ from classical inheritance?
+What is the prototype property of a function/class?
+What is __proto__?
+Explain Object.create() and its use in prototypal inheritance.
+
+
+Day 29: Functional Programming Concepts
+Review: What is functional programming? What are its core principles?
+Explain pure functions. What are their benefits?
+What is immutability in the context of functional programming?
+What is side effect? Why should pure functions avoid them?
+What is first-class function?
+What is higher-order function? (Review)
+Explain function composition (revisited).
+What is point-free style? Give an example.
+What is memoization? When is it useful?
+Write a simple memoized version of a function (e.g., factorial or Fibonacci).
+
+
+Day 30: Advanced Concepts & Best Practices
+What is the concept of this binding and call/apply/bind?
+Explain call(), apply(), and bind() methods. When would you use each?
+What is event bubbling and event capturing?
+Explain the concept of IIFE (Immediately Invoked Function Expression). When would you use it?
+What is Strict Mode ('use strict')? What are its benefits?
+Explain garbage collection in JavaScript.
+What are common JavaScript design patterns? (e.g., Module pattern, Singleton, Factory). Briefly describe one.
+What are Web Components? Briefly explain their purpose.
+What is a Service Worker? What problems does it solve?
+Discuss best practices for writing clean, maintainable, and performant JavaScript code.

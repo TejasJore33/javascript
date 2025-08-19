@@ -1,0 +1,461 @@
+Sure! Here's a **comprehensive and detailed collection** of JavaScript **interview questions and answers**, covering **fundamentals, functions, async programming, objects, the DOM, prototypes, performance, advanced topics**, and **coding exercises**.
+
+---
+
+# 🔹 Section 1: JavaScript Basics
+
+### **1. What are the different data types in JavaScript?**
+
+* **Primitive Types**: `String`, `Number`, `BigInt`, `Boolean`, `Undefined`, `Null`, `Symbol`
+* **Non-Primitive (Reference) Types**: `Object`, `Array`, `Function`
+
+---
+
+### **2. What is the difference between `var`, `let`, and `const`?**
+
+| Feature      | `var`                          | `let`       | `const`     |
+| ------------ | ------------------------------ | ----------- | ----------- |
+| Scope        | Function                       | Block       | Block       |
+| Hoisting     | Yes (initialized as undefined) | Yes (TDZ\*) | Yes (TDZ\*) |
+| Reassignable | Yes                            | Yes         | No          |
+| Redeclarable | Yes                            | No          | No          |
+
+> \*TDZ = Temporal Dead Zone (access before declaration throws an error)
+
+---
+
+### **3. What is hoisting?**
+
+Hoisting is JavaScript’s behavior of moving declarations to the top of the current scope during compilation. Only **declarations** are hoisted, not **initializations**.
+
+```js
+console.log(x); // undefined
+var x = 5;
+```
+
+---
+
+### **4. What are truthy and falsy values?**
+
+* **Falsy values**: `false`, `0`, `""`, `null`, `undefined`, `NaN`
+* **Truthy**: All other values
+
+```js
+if ("hello") console.log("Truthy!"); // runs
+```
+
+---
+
+### **5. What is type coercion?**
+
+Type coercion is the automatic conversion of one data type to another.
+
+```js
+'5' + 1    // '51' (number coerced to string)
+'5' - 1    // 4 (string coerced to number)
+```
+
+---
+
+# 🔹 Section 2: Functions and Scope
+
+### **6. Function declaration vs expression**
+
+* **Declaration** is hoisted:
+
+```js
+function greet() {}
+```
+
+* **Expression** is not:
+
+```js
+const greet = function() {};
+```
+
+---
+
+### **7. Arrow functions vs regular functions**
+
+Arrow functions:
+
+* Do not bind `this`
+* Cannot be constructors
+* No `arguments` object
+
+```js
+const add = (a, b) => a + b;
+```
+
+---
+
+### **8. What is a closure?**
+
+A closure is a function that retains access to its lexical scope even after the outer function has returned.
+
+```js
+function outer() {
+  let count = 0;
+  return function inner() {
+    return ++count;
+  };
+}
+```
+
+---
+
+### **9. What is a callback function?**
+
+A function passed into another function as an argument.
+
+```js
+setTimeout(() => console.log("Done"), 1000);
+```
+
+---
+
+### **10. What is currying?**
+
+Breaking a function with multiple arguments into a series of single-argument functions.
+
+```js
+const add = a => b => a + b;
+add(2)(3); // 5
+```
+
+---
+
+# 🔹 Section 3: Asynchronous JavaScript
+
+### **11. Synchronous vs asynchronous**
+
+* **Synchronous**: Blocking
+* **Asynchronous**: Non-blocking, handled via callbacks, promises, or `async/await`.
+
+---
+
+### **12. Event loop components**
+
+* **Call Stack**: Executes functions
+* **Web APIs**: Handles `setTimeout`, DOM events
+* **Callback Queue**: Stores callback functions
+* **Microtask Queue**: Stores promises, executed before callbacks
+
+---
+
+### **13. What is a Promise?**
+
+An object representing eventual success or failure of an async operation.
+
+```js
+new Promise((resolve, reject) => { ... });
+```
+
+---
+
+### **14. async/await**
+
+Syntactic sugar over Promises to make async code look synchronous.
+
+```js
+async function fetchData() {
+  const data = await fetch(url);
+}
+```
+
+---
+
+### **15. Promise.all vs race vs allSettled**
+
+* `Promise.all`: Resolves when **all** succeed
+* `Promise.race`: Resolves/rejects with the **first settled** promise
+* `Promise.allSettled`: Resolves when **all settle**, regardless of outcome
+
+---
+
+# 🔹 Section 4: Objects, Arrays, ES6+
+
+### **16. How to clone an object?**
+
+* Shallow clone: `const copy = { ...obj };`
+* Deep clone: `JSON.parse(JSON.stringify(obj));`
+
+---
+
+### **17. Object.assign() vs spread operator**
+
+Both copy properties from one object to another. Spread is more concise:
+
+```js
+let clone = { ...original };
+```
+
+---
+
+### **18. Destructuring and template literals**
+
+```js
+const { name } = obj;
+const [a, b] = arr;
+const msg = `Hello ${name}`;
+```
+
+---
+
+### **19. Map and Set**
+
+* **Map**: Key-value pairs
+* **Set**: Unique values only
+
+```js
+const map = new Map();
+const set = new Set([1, 2, 3]);
+```
+
+---
+
+### **20. Optional chaining and nullish coalescing**
+
+```js
+user?.address?.city;
+value ?? 'default';
+```
+
+---
+
+# 🔹 Section 5: DOM and Events
+
+### **21. How to select DOM elements?**
+
+* `getElementById`
+* `querySelector`
+* `querySelectorAll`
+
+---
+
+### **22. Event bubbling and delegation**
+
+* **Bubbling**: Events move upward
+* **Delegation**: Handle events on a parent, useful for dynamic content
+
+---
+
+### **23. How does `addEventListener` work?**
+
+Attaches an event handler to an element:
+
+```js
+element.addEventListener('click', handler);
+```
+
+---
+
+### **24. innerHTML vs innerText vs textContent**
+
+* `innerHTML`: includes HTML
+* `innerText`: visible text only
+* `textContent`: all text, even hidden
+
+---
+
+### **25. How to dynamically create elements?**
+
+```js
+const div = document.createElement("div");
+div.textContent = "Hello";
+document.body.appendChild(div);
+```
+
+---
+
+# 🔹 Section 6: Prototypes and Inheritance
+
+### **26. **proto** vs prototype**
+
+* `__proto__`: Points to an object’s prototype
+* `prototype`: Used to define inheritance for functions/constructors
+
+---
+
+### **27. How does prototypal inheritance work?**
+
+Objects inherit from other objects using their prototype chain.
+
+---
+
+### **28. What is Object.create()?**
+
+Creates a new object with the specified prototype.
+
+```js
+const newObj = Object.create(protoObj);
+```
+
+---
+
+### **29. class syntax in JavaScript**
+
+```js
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+}
+```
+
+---
+
+### **30. class vs constructor function**
+
+Both create objects, but `class` is syntactic sugar over prototype-based constructors.
+
+---
+
+# 🔹 Section 7: Memory and Performance
+
+### **31. What causes memory leaks?**
+
+* Forgotten timers
+* Closures holding unnecessary data
+* Detached DOM nodes
+
+---
+
+### **32. How does garbage collection work?**
+
+JS uses **mark-and-sweep**: finds unreachable objects and frees them.
+
+---
+
+### **33. Debouncing vs Throttling**
+
+* **Debounce**: Delays execution until pause
+* **Throttle**: Limits execution to every X ms
+
+---
+
+### **34. What are Web Workers?**
+
+Allow scripts to run in background threads, useful for heavy computations.
+
+---
+
+### **35. How to optimize DOM updates?**
+
+* Minimize reflows
+* Use `DocumentFragment`
+* Batch DOM changes
+
+---
+
+# 🔹 Section 8: Advanced JavaScript
+
+### **36. Explain the event loop with `setTimeout` and `Promise`**
+
+```js
+console.log("start");
+setTimeout(() => console.log("timeout"), 0);
+Promise.resolve().then(() => console.log("promise"));
+console.log("end");
+
+// Output:
+// start
+// end
+// promise
+// timeout
+```
+
+---
+
+### **37. What are generators and iterators?**
+
+```js
+function* gen() {
+  yield 1;
+  yield 2;
+}
+```
+
+Generators return iterators that can pause and resume.
+
+---
+
+### **38. What is module bundling?**
+
+Combines multiple JavaScript files into one (e.g., using Webpack).
+
+---
+
+### **39. What is tree shaking?**
+
+Removing unused code during bundling (ES6 modules only).
+
+---
+
+### **40. What is memoization?**
+
+Caching results of function calls to improve performance.
+
+```js
+function memoize(fn) {
+  const cache = {};
+  return function(n) {
+    if (cache[n]) return cache[n];
+    return (cache[n] = fn(n));
+  };
+}
+```
+
+---
+
+# 🔹 Section 9: Coding Problems
+
+### **41. Reverse a string**
+
+```js
+const reverse = str => str.split("").reverse().join("");
+```
+
+---
+
+### **42. Check for palindrome**
+
+```js
+const isPalindrome = str => str === str.split("").reverse().join("");
+```
+
+---
+
+### **43. Flatten a nested array**
+
+```js
+const flatten = arr => arr.flat(Infinity);
+```
+
+---
+
+### \*\*44. Deep clone an object
+
+
+\*\*
+
+```js
+const clone = obj => JSON.parse(JSON.stringify(obj));
+```
+
+---
+
+### **45. Implement custom `bind`**
+
+```js
+Function.prototype.myBind = function (context, ...args) {
+  const fn = this;
+  return function (...nextArgs) {
+    return fn.apply(context, [...args, ...nextArgs]);
+  };
+};
+```
+
+---
+
+Would you like this exported as a PDF or Word file? I can also help quiz you on these topics if you're prepping for an interview.
